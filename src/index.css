@@ -1,0 +1,10 @@
+@import './core/app_styles.css';
+
+/* Additional global resets or overrides if needed */
+* {
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  height: 100%;
+}

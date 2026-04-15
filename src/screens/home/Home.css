@@ -1,0 +1,147 @@
+.home-page {
+  background-color: var(--surface);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.text-center {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+/* Map Preview Section */
+.map-preview {
+  padding: 5rem 0;
+}
+
+.filter-chips {
+  display: flex;
+  gap: 0.75rem;
+  margin: 1.5rem 0;
+}
+
+.chip {
+  padding: 0.5rem 1.25rem;
+  background: white;
+  border-radius: var(--radius-full);
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+  border: 1px solid var(--outline-variant);
+  transition: all 0.2s ease;
+}
+
+.chip.active {
+  background: var(--primary);
+  color: white;
+  border-color: var(--primary);
+}
+
+.map-placeholder {
+  height: 400px;
+  background: #E0E2E5;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.floating-location {
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+  background: white;
+  padding: 1rem;
+  border-radius: var(--radius-default);
+  box-shadow: var(--shadow-ambient);
+  display: flex;
+  flex-direction: column;
+  z-index: 5;
+}
+
+.floating-location strong {
+  font-size: 0.75rem;
+  color: var(--secondary);
+}
+
+.floating-location span {
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+/* FAQ Section */
+.faq-section {
+  padding: 5rem 0;
+}
+
+.accordion-list {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.accordion-item {
+  background: var(--surface-container-low);
+  margin-bottom: 0.75rem;
+  border-radius: var(--radius-default);
+}
+
+.accordion-header {
+  padding: 1.25rem 1.5rem;
+  font-weight: 600;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+/* Footer style */
+.main-footer {
+  background: var(--primary);
+  color: white;
+  padding: 5rem 0 2rem;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 2fr repeat(3, 1fr);
+  gap: 3rem;
+  padding-bottom: 4rem;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.footer-brand p {
+  margin-top: 1rem;
+  opacity: 0.7;
+  max-width: 250px;
+}
+
+.footer-links h5 {
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+}
+
+.footer-links a {
+  display: block;
+  color: white;
+  opacity: 0.6;
+  text-decoration: none;
+  margin-bottom: 0.75rem;
+  font-size: 0.875rem;
+  transition: opacity 0.2s;
+}
+
+.footer-links a:hover {
+  opacity: 1;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 2rem;
+  font-size: 0.75rem;
+  opacity: 0.5;
+  letter-spacing: 0.1em;
+}
