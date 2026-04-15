@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Manrope:wght@600;700;800&display=swap');
+
+:root {
+  /* Editorial Typography Scale */
+  --font-display: 'Manrope', sans-serif;
+  --font-body: 'Inter', sans-serif;
+
+  /* Color Variables (Synced with app_colors.js) */
+  --primary: #031632;
+  --primary-container: #1A2B48;
+  --on-primary: #FFFFFF;
+  --secondary: #006a6a;
+  --secondary-container: #D1E8E8;
+  --on-secondary-container: #002020;
+  --surface: #F8F9FA;
+  --surface-container-low: #F3F4F5;
+  --surface-container-lowest: #FFFFFF;
+  --surface-dim: #D9DADB;
+  --outline-variant: rgba(3, 22, 50, 0.15);
+  
+  /* Elevation */
+  --shadow-ambient: 0px 12px 32px rgba(8, 27, 56, 0.06);
+  
+  /* Radius */
+  --radius-default: 8px;
+  --radius-lg: 16px;
+  --radius-full: 9999px;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  background-color: var(--surface);
+  color: var(--primary);
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-display);
+  font-weight: 700;
+  margin: 0;
+}
+
+/* Base Utility for the No-Line Rule */
+.surface-card {
+  background-color: var(--surface-container-lowest);
+  border-radius: var(--radius-lg);
+  padding: 1.5rem;
+  box-shadow: var(--shadow-ambient);
+}
+
+.section-bg {
+  background-color: var(--surface-container-low);
+}
+
+/* Glassmorphism Rule */
+.glass-nav {
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+}

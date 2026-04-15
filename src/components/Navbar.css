@@ -1,0 +1,64 @@
+.navbar-glass {
+  position: fixed;
+  top: 1.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  max-width: 1200px;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1.5rem;
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(24px);
+  border-radius: var(--radius-lg);
+  z-index: 1000;
+  box-shadow: var(--shadow-ambient);
+}
+
+.nav-logo {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 1.25rem;
+  color: var(--primary);
+}
+
+.nav-links-container {
+  display: flex;
+  background: var(--surface-container-low);
+  padding: 4px;
+  border-radius: var(--radius-default);
+  gap: 4px;
+}
+
+.nav-link {
+  text-decoration: none;
+  font-family: var(--font-body);
+  font-size: 0.875rem;
+  font-weight: 500;
+  padding: 8px 16px;
+  border-radius: var(--radius-default);
+  color: var(--primary);
+  transition: all 0.2s ease;
+}
+
+.nav-link.active {
+  background: var(--secondary);
+  color: white;
+}
+
+.nav-link:not(.active):hover {
+  background: var(--surface-container-highest);
+}
+
+.profile-icon {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--surface-container-low);
+  border-radius: var(--radius-default);
+  cursor: pointer;
+}
